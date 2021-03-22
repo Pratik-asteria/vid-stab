@@ -89,9 +89,11 @@ int main() {
   printf("Read %i bytes. Received message: ", num_bytes);
 
   for(int i=0; i< num_bytes; i++){
-  	cout << (int)read_buf[i];
+  	printf("%x ", read_buf[i]);
+  	//cout << (int)read_buf[i];
   } //print the 59 byte feedback data
 
+  printf("\n");
   close(serial_port);
 
   return 0; // success
